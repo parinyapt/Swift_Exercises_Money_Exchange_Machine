@@ -11,6 +11,11 @@ var b1000,b500,b100,b50,b20,c10,c5,c2,c1:Int
 print("Enter amount of withdraw money : ", terminator: "")
 money = Int(readLine()!)!
 
+while money < 0 {
+  print("Enter amount of withdraw money : ", terminator: "")
+  money = Int(readLine()!)!
+}
+
 b1000 = money/1000
 money = money % 1000
 b500 = money/500
@@ -43,10 +48,16 @@ let output = """
 """
 print(output)
 
+//-------------------------------------------------------------//
 
 ///Solution 2
 print("Enter amount of withdraw money : ", terminator: "")
 var money = Int(readLine()!)!
+
+while money < 0 {
+  print("Enter amount of withdraw money : ", terminator: "")
+  money = Int(readLine()!)!
+}
 
 var config_bank: [Int] = [1000,500,100,50,20,10,5,2,1]
 var bank_amount:Int
