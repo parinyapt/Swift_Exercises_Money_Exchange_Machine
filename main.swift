@@ -12,7 +12,7 @@ print("Enter amount of withdraw money : ", terminator: "")
 money = Int(readLine()!)!
 
 while money < 0 {
-  print("Enter amount of withdraw money : ", terminator: "")
+  print("Enter amount of withdraw money again! : ", terminator: "")
   money = Int(readLine()!)!
 }
 
@@ -55,7 +55,7 @@ print("Enter amount of withdraw money : ", terminator: "")
 var money = Int(readLine()!)!
 
 while money < 0 {
-  print("Enter amount of withdraw money : ", terminator: "")
+  print("Enter amount of withdraw money again! : ", terminator: "")
   money = Int(readLine()!)!
 }
 
